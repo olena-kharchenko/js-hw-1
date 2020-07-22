@@ -35,6 +35,7 @@ if (countryName === null) {
   message = CANCELED_BY_USER;
 } else {
   country = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase(); // Write code in this line
+  // Write code in this line
   switch (country) {
     // Write code under this line
     case 'Китай':
@@ -52,17 +53,19 @@ if (countryName === null) {
     case 'Ямайка':
       price = 120;
       break;
+
+    default:
+      message = NO_DELIVERY;
+      console.log(message);
   }
 }
+
 if (price > 0) {
   // Write code in this line
   message = `Доставка в ${country} будет стоить ${price} кредитов`;
-} else if (countryName === null) {
-  message = CANCELED_BY_USER;
-} else {
-  message = NO_DELIVERY;
 }
-console.log(message);
+
+// console.log(message);
 
 //если countryName равно "КитаЙ"
 // то значение message будет равно

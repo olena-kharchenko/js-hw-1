@@ -16,7 +16,7 @@
 // Используйте вспомогательную переменную totalPrice, которая принимает рассчитанную общую цену заказа.
 // Используйте вспомогательную переменную balanceСredit, которая принимает разницу между credits и totalPrice.
 // А также используйте if else для выбора значений переменной message.
-const orderPieces = 4;
+const orderPieces = 10;
 
 const credits = 23580;
 const pricePerDroid = 3000;
@@ -36,7 +36,7 @@ if (orderPieces === null) {
   message = ACCESS_DENIED;
 }
 
-// console.log(message);
+console.log(message);
 
 //если orderPieces равно 4
 // то значение message будет равно
